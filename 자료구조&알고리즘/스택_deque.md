@@ -47,6 +47,6 @@ class Stack:
 
     def dump(self) -> int:
         """바닥부터 꼭대기 순으로 출력"""
-        print(list(self.__stk))
+        print(list(self.__stk)) 
 ~~~
 
