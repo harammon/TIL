@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Etc Control Statement</title>
+</head>
+<body>
+	<h1>exercise2-2</h1>
+	<script>
+		function sum(num){
+        	if (num == 0){
+            	return;
+            }
+        	else{
+              return num;
+            }
+        }
+      randNum = Math.floor(( Math.random() * 6))
+      result = sum(randNum)
+      if (result == undefined){
+      	document.write('<h3>결과 값이 없어요!!</h3></br>');
+      }else{
+		document.write('<h2>호출 결과 값 : '+result+'</h2></br>');
+      }
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Etc Control Statement</title>
+</head>
+<body>
+	<h1>exercise2-1</h1>
+	<script>
+		function sum(num){
+        	if (num === undefined){
+            	return;
+            }
+        	else{
+              	var result = 0
+              	if (num > 0){
+                  for (var i = 1; i < num+1; i++){
+                    result += i;
+                  }
+                }else if (num == 0){
+                    return 1;
+                }
+                else{
+                	for (var i = num; i <= 1; i ++){
+                    	result += i;
+                    }
+                }
+              return result
+            }
+        }
+      document.write('sum(5) : '+sum(5)+'</br>');
+      document.write('sum(1) : '+sum(1)+'</br>');
+      document.write('sum(0) : '+sum(0)+'</br>');
+      document.write('sum(-4) : '+sum(-4)+'</br>');
+      document.write('sum() : '+sum()+'</br>');
+	</script>
+</body>
+</html>
