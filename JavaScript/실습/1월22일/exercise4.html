@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise4</title>
+</head>
+<body>
+<script>
+    var random = Math.floor(Math.random()*3+1);
+    if(confirm("다른 페이지로 이동하시겠습니까?")) {
+        if (random == 1){
+            location.href = "https://www.daum.net/";
+        }else if (random == 2){
+            location.href = "https://www.naver.com/";
+        }else{
+            location.href = "https://www.google.com/";
+        }
+    }else{
+        location.href = "http://localhost:8000/edu/jsexam/exercise4.html"
+    }
+</script>
+</body>
+</html>
