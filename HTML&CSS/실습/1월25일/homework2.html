@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 학습</title>
+        <style>
+            body{
+                font-weight: bold;
+            }
+            header {
+               background: linear-gradient( to left, yellow, red );
+               text-align : center;
+               height: 100px;
+               padding: 20px;
+               margin-bottom : 40px;
+            }
+            a {
+                font-weight: normal;
+                margin : 7%;
+                text-decoration : none;
+            }
+            a:hover {
+                font-weight: bold;
+            }
+            article {
+                width : 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom : 30px;
+                padding : 10px;
+                border : 2px dotted red;
+                border-radius: 10px;
+            }
+            table, th, td {
+                border: 2px solid green;
+                border-collapse: collapse;
+                padding : 5px;
+
+            }
+            table{
+                width : 40%;
+            }
+            th {
+                background-color : lawngreen;
+                font-size : 20px;
+                font-weight: bold;
+            }
+            td {
+                padding-left : 20px;
+            }
+            h2 {
+                font-size : 25px;
+                font-weight: bold;
+            }
+            figure {
+                text-align : center;
+            }
+            span {
+                color : pink;
+            }
+            aside {
+                text-align : center;
+                margin-bottom : 30px;
+            }
+            footer {
+                text-align : center;
+                color : white;
+                background : black;
+                height : 50px;
+                line-height: 50px;
+            }
+
+            .a {
+                color : pink;
+            }
+            .b {
+                color : orange;
+            }
+            .c {
+                color : blue;
+            }
+            #no1 {
+                color : blue;
+                text-shadow: 2px 2px 2px white;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id = "no1">HTML5 학습</h1>
+            <nav>
+                <a href="http://www.w3schools.com/">W3C Schools</a>
+                <a href="http://www.w3.org/">W3C</a>
+                <a href="http://www.jquery.com/">jQuery</a>
+            </nav>
+        </header>
+        <section>
+            <article>
+             <h2 class="a">나의 소개</h2>
+                <ul>
+                  <li>이름 : 이하람</li>
+                  <li>별명 : 하람몬</li>
+                  <li>관심기술 : 빅데이터 분석</li>
+                  <li>취미 : 드럼 연주</li>
+                </ul>
+            </article>
+            <article>
+                <h2 class = "b">최근에 재미있게 본 영화</h2>
+                <table border = "1">
+                    <tr><th width="60%">제목</th><th>장르</th></tr>
+                    <tr><td width="60%">신의 한수 : 귀수편</td><td>액션</td></tr>
+                    <tr><td width="60%">슈퍼배드</td><td>애니메이션</td></tr>
+                    <tr><td width="60%">엑시트</td><td>코미디</td></tr>
+                </table>
+            </article>
+            <article>
+                <h2 class = "c">자랑하고 싶은 <span>우리 동네</span>의 아름다운 곳</h2>
+                <p>세빛섬(플로팅 아일랜드, Floating island)는 2006년 서울 시민 김은성씨의 제안으로 서울시에서 수익형 민자사업(BTO)으로 만든 인공섬이다. 비스타(Vista), 비바(Viva), 테라(Terra)의 3개로 나뉘어 있다.
+                </p>
+                    <figure>
+                        <img src="/edu/images/세빛섬.png">
+                        <figcaption>서울의 한강에 있는 세빛섬</figcaption>
+                    </figure>
+            </article>
+        </section>
+        <aside>
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/jxEYezpXGb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </aside>
+        <footer>
+            <em>이 문서는 이하람에 의해 HTML5와 CSS3기술을 사용하여 2021년 1월 14일에 작성했습니다.(ver 1.0)</em>
+        </footer>
+    </body>
+</html>
