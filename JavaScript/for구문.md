@@ -56,3 +56,6 @@ for (var value of iterable) {
 
 *반복할 수 있는 객체 : Array, Map, Setm arguments 객체*  
 
+<br/><br/>
+[출처]<br/>
+TCP School http://www.tcpschool.com/javascript/js_control_loop
