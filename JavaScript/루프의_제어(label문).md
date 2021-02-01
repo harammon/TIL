@@ -81,3 +81,6 @@ Outerloop : 4
 Exiting the loop!
 ~~~
 
+<br/><br/>
+[출처]<br/>
+TCP School http://www.tcpschool.com/javascript/js_control_etc
