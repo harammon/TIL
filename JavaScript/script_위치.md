@@ -19,3 +19,10 @@
   - DOM 트리가 생성되기전에 자바스크립트가 생성되지도 않은 DOM의 조작을 시도할 수 있다.
 
 - 위와 같은 상황을 막기 위해 script 태그는 body 태그 최하단에 위치하는 게 가장 좋다.
+
+<br/>
+
+<br/>
+
+[출처]<br/>
+TCP School http://www.tcpschool.com/javascript/js_datatype_basic
