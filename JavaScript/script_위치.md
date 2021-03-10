@@ -21,13 +21,12 @@
 - 위와 같은 상황을 막기 위해 script 태그는 body 태그 최하단에 위치하는 게 가장 좋다.
 
 <br/>
-<<<<<<< HEAD
-
 <br/>
 
-[출처]<br/>
+[출처]
+<br/>
 TCP School http://www.tcpschool.com/javascript/js_datatype_basic
-=======
-[출처]<br/>
+
+[출처]
+<br/>
 https://velog.io/@takeknowledge/script-%ED%83%9C%EA%B7%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%9C%84%EC%B9%98%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C%EC%9A%94
->>>>>>> 0aa61e3410ff28c8aab2f05fade4b8e572ac2e29
