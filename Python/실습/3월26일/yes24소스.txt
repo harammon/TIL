@@ -1,0 +1,42 @@
+from selenium import webdriver
+
+driver = webdriver.Chrome('C:/Temp/chromedriver')
+driver.implicitly_wait(3) 
+driver.get("http://www.yes24.com/Product/goods/40936880")
+import time
+time.sleep(2)
+
+stopFlag = False
+while True :
+  for n in range(4, 13) :
+    linkurl = '#infoset_reviewContentList > div.review_sort.sortBot > div.review_sortLft > div > a:nth-child('+str(n)+')'
+    linkNum = driver.find_element_by_css_selector(linkurl)
+    linkNum.click()   
+    time.sleep(2)
+    readLinks = driver.find_elements_by_css_selector('#infoset_reviewContentList span.review_more')
+    for readlink in readLinks :
+      try :
+        readlink.click()
+      except :
+        driver.execute_script("arguments[0].click", readlink)                  
+      time.sleep(2)
+
+    reviewList = driver.find_elements_by_css_selector('#infoset_reviewContentList div.reviewInfoBot.origin div.review_cont')
+    for review in reviewList :    
+      temp_list.append(review.text)
+    
+    if len(reviewList) < 5 :
+      stopFlag = True
+      break
+      
+  if stopFlag == True :
+    break
+  nextPage = '#infoset_reviewContentList > div.review_sort.sortBot > div.review_sortLft > div > a.bgYUI.next'
+  linkNum = driver.find_element_by_css_selector(nextPage)
+  linkNum.click()
+  time.sleep(2)
+
+print("스크래핑 끝!!")
+wfile = open("output/yes24file.txt","w", encoding="utf-8") 
+wfile.writelines(temp_list) 
+wfile.close()
